@@ -1,0 +1,352 @@
+/* html,
+body {
+
+  background-image: url(../images/trackfilter.png);
+  background-color: black;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+} */
+/* @media screen and (min-width: 760px){
+
+} */
+
+
+.titlebar {
+  grid-area: b;
+  margin-left: 7%;
+}
+
+.porttitle {
+  font-size: 55px;
+  /* transform: rotate(-20deg); */
+  font-family: "Great Vibes", cursive;
+  
+  
+  color: rgb(140, 131, 150);
+  text-shadow: 0 0 5px #f47;
+}
+.portmenu{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  grid-area: m;
+  color: whitesmoke;
+}
+
+.portmenu:hover{
+  cursor: pointer;
+  filter: brightness(200%);
+}
+
+.portoptions{
+  /* margin-top: 0; */
+  /* margin-left: 40%; */
+  grid-area: q;
+  display: grid;
+
+  justify-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "ph"
+  "pa"
+  "pc";
+}
+.portopt{
+  align-self: flex-start;
+}
+#porthome{
+  grid-area: ph;
+}
+#portabout{
+  grid-area: pa;
+}
+#portcontact{
+  grid-area: pc;
+}
+
+.option{
+  font-family: 'Roboto Mono', monospace;
+  color: whitesmoke;
+}
+.option:hover{
+  transform: scale(1.1);
+  filter: brightness(250%);
+  cursor: pointer;
+}
+
+.scroll {
+  /* padding: 20px; */
+  grid-area: k;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 20px 1fr 20px; */
+  /* border: solid 3px rgb(107, 89, 94); */
+  border-radius: 5px;
+  height: auto;
+  width: 80%;
+  height: 90%;
+  overflow: scroll;
+  justify-self: end;
+  align-self: flex-start;
+  background: rgba(61, 59, 59, 0.322);
+}
+
+/* .scroll > * {
+    grid-column: 2 / -2;
+  } */
+
+/* .scroll::before,
+.scroll::after {
+  content: "";
+  width: 10px;
+} */
+
+.scrolltitle {
+ 
+  margin-left: 20px;
+  text-decoration: underline;
+  color: darkgray;
+  font-size: 70%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.work {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  /* justify-content: space-around; */
+  padding: 0;
+
+  /* padding-top: 10px; */
+  /* padding-bottom: 10px; */
+  /* display: grid; */
+  /* overflow-x: scroll; */
+  /* grid-gap: 10px; */
+  /* grid-template-columns: repeat(4, calc(50% - 40px)); */
+  /* grid-template-rows: minmax(150px, 1fr); */
+}
+.workBtn {
+  height: 100px;
+  width: 100px;
+}
+
+.item {
+  /* background: rgba(219, 195, 195, 0.397); */
+  margin: 0px;
+  color: darkgray;
+  /* font-family: 'Julius Sans One', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
+  font-size: 60%;
+  /* color: whitesmoke; */
+  padding: 10px;
+  text-align: center;
+}
+
+
+.item:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.modal {
+  grid-area: j;
+  /* background: whitesmoke; */
+  background: rgba(134, 134, 134, 0.123);
+  border-radius: 5px;
+  /* position: fixed;  */
+  /* z-index: 1;  */
+  /* left: 0;
+  top: 0; */
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr auto;
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-areas:
+
+    "vid vid vid vid"
+    "vid vid vid vid"
+    "vid vid vid vid" 
+    "info info info info"
+    "opt opt opt opt" ;
+  
+
+  width: 90%;
+  height: 90%;
+  justify-self: end;
+  /* overflow: auto; */
+  /* border: dashed 2px rgb(105, 27, 48); */
+
+
+}
+.tipsy-demo{
+    grid-area: vid;
+}
+.tipsy-text {
+  padding: 20px;
+  grid-area: info;
+  background: white;
+  
+
+}
+.tipsy-option{
+    /* height: 50px; */
+    grid-area: opt;
+    background: rgb(51, 51, 51);
+    color: whitesmoke;
+    font-family: 'Bahianita', cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+.tipsy-info{
+  
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 110%;
+  font-weight: lighter;
+}
+.close {
+float: right;
+color: whitesmoke;
+}
+.tip{
+  padding: 3px;
+}
+
+.tip:hover,
+.tip:focus {
+  color: crimson;
+  /* color: rgb(90, 53, 255); */
+  /* border: solid 1px white; */
+  cursor: pointer;
+  filter: brightness(200%);
+}
+.portfoot{
+  grid-area: o;
+  justify-self: center; 
+}
+ 
+.portfoliocontainer {
+ 
+  background-image: url(../images/trackfilter.png);
+  background-size: 100% 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr auto;
+  grid-template-areas:
+    "b b n n n m"
+    "k j j j j q"
+    "k j j j j d "
+    "k j j j j d"
+    "k j j j j d"
+    "l l o o p p";
+}
+
+@media only screen and (max-width: 850px) {
+  .portfoliocontainer {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr auto auto;
+    grid-template-areas:
+    "b b n n n m"
+    "k j j j j q"
+    "k j j j j d "
+    "k j j j j d"
+    "k j j j j d"
+    "l l o o p p";
+    
+  }
+  .workBtn {
+    height: 70px;
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .portfoliocontainer {
+    background: url(../images/trackfilter.png);
+    background-size: 100% 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 20px 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "ttl btn"
+      "xxx mnu"
+      "mdl mdl"
+      "mdl mdl"
+      "scr scr"
+      "ftr ftr";
+  }
+  .titlebar {
+    grid-area: ttl;
+  }
+  .portmenu{
+    grid-area: btn;
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+  .portoptions{
+    grid-area: mnu;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .portopt{
+  margin: 0px 10% 0 10%;
+  font-size: 10px;
+  }
+  #goto{
+    width: 50px;
+    height: 35px;
+  }
+  .scroll{
+    align-self: center;
+    grid-area: scr;
+    width: 100%;
+    height: 70%
+  }
+  .item{
+    padding: 0px 15px 0px 15px;
+  }
+  .work{
+    flex-direction: row;
+  }
+  .workBtn {
+    height: 60px;
+    width: 60px;
+  }
+  .modal{
+    align-self: center;
+    grid-area: mdl;
+    justify-self: center;
+  }
+  .portfoot{
+    grid-area: ftr;
+  }
+  .tipsy-text {
+    padding: 10px;
+  }
+  .tipsy-option{
+    font-size: 10px;
+    padding: 10px;
+  }
+  .tipsy-info{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 75%;
+    font-weight: lighter;
+  }
+}
+
+
+
+

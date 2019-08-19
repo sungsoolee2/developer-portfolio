@@ -1,0 +1,353 @@
+html,
+body {
+  /* background-image: url(../images/chicagoneon.jpg);
+  background-color: black; */
+
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.nameplate {
+  grid-area: c;
+  display: flex;
+  align-self: flex-start;
+
+}
+.name {
+  letter-spacing: 2.5px;
+  font-weight: lighter;
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  padding: 2px;
+  text-align: right;
+  color: antiquewhite;
+  text-shadow: 0 0 5px #f47;
+}
+.navbutton {
+  /* margin-top: 30px;
+    margin-left: 10px;
+    float: right; */
+    text-decoration: none;
+  border: none;
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+  background: none;
+  /* border-radius: 5px; */
+  box-sizing: content-box;
+  font-family: "Great Vibes", cursive;
+  /* color: antiquewhite; */
+  text-shadow: 0 0 5px white, 3px 3px 5px rgb(30, 9, 71);
+}
+.navbutton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #000;
+}
+#first {
+}
+#last {
+  padding-top: 40px;
+  margin-left: -113px;
+}
+.frontContact{
+  grid-area: b;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "cls cls"
+  "hed hed"
+  "frm frm"
+  "frm frm"
+  "ctc1 ctc2";
+  background: rgba(0, 0, 34, 0.705);
+}
+.greetDiv{
+  grid-area: hed;
+}
+.ctcClose{
+  padding-right: 5px;
+  grid-area: cls;
+  justify-self: end;
+  color: darkgray;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.ctcClose:hover{
+  filter: brightness(200%);
+  cursor: pointer;
+}
+.greeting{
+  margin-left: 10px;
+  color: darkgray;
+  /* font-family: "Great Vibes", cursive; */
+  font-family: 'Julius Sans One', sans-serif;
+}
+.fillup{
+  grid-area: frm;
+}
+.box{
+  width: 92%;
+  margin: 5px 10px 15px 10px;
+  background-color:rgba(50, 50, 50, 0.5);
+  color: white;
+  border-radius: 5px;
+  font-family: 'Roboto Mono', monospace;
+}
+#box3{
+  height: 150px;
+}
+.sendBtn{
+  float: right;
+  margin-right: 20px;
+  padding: 5px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: black;
+  background: whitesmoke;
+  /* border-radius: 5px; */
+}
+.sent{
+  display: none;
+  margin-left: 10px;
+  font-family: 'Roboto Mono', monospace;
+  color: darkgray;
+  font-size: 12px;
+}
+.form{
+  padding: 5px;
+  margin-left: 10px;
+  font-family: 'Julius Sans One', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+  color: darkgray;
+}
+.fcontact{
+  grid-area: ctc1;
+  align-self: flex-end;
+  margin: 10px;
+  grid-area: ctc;
+  color: rgb(202, 188, 202);
+  font-size: 70%;
+  font-family: "Julius Sans One", sans-serif;
+}
+#ctc1{
+  grid-area: ctc1;
+  align-self: flex-end;
+}
+#ctc2{
+  grid-area: ctc2;
+  align-self: flex-end;
+}
+.icondiv{
+  grid-area: k;
+  color: #000;
+}
+.buttondiv {
+  justify-items: flex-start;
+  grid-area: g;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "about portfolio contact"
+  "about portfolio contact"
+  "about portfolio contact";
+}
+#one{
+  grid-area: about;
+}
+#two{
+  grid-area: portfolio;
+}
+#three{
+  grid-area: contact;
+}
+.jetfly {
+  grid-area: g;
+  background: url(../images/arrowsblue.gif);
+  background-size: 95% 30%;
+  background-repeat: no-repeat;
+}
+/* .jetstay {
+  grid-area: g;
+  background: url(../images/arrows.gif);
+  background-size: 80% 25%;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+} */
+
+.footer {
+  /* background-image: url(./images/smpurplewater.gif);
+    background-repeat: no-repeat; */
+  grid-area: j;
+  display: grid;
+  /* height: 10vh;
+    min-width: 100%; */
+}
+
+
+.navbar{
+  background:rgb(3, 3, 3);
+  height: 40px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "x x y y y";
+}
+
+.social{
+  grid-area: x;
+}
+.sclbtn{
+  margin: 0px 10px 0px 10px;
+}
+.time{
+  justify-self: end;
+  grid-area: y;
+  padding: 10px;
+  float: right;
+  color: whitesmoke;
+  /* font-family: "Great Vibes", cursive; */
+  font-family: 'Rajdhani', sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+}
+/* #git{
+  justify-self: right;
+  grid-area: git;
+}
+#insta{
+  justify-self: right;
+  grid-area: insta;
+}
+#linked{
+  justify-self: right;
+  grid-area: linked;
+}
+#google{
+  justify-self: right;
+  grid-area: google;
+} */
+.sclbtn:hover {
+  filter: brightness(300%);
+  cursor: pointer;
+}
+.jumpbtn:hover {
+  cursor: pointer;
+  color: white;
+  filter: brightness(150%);
+}
+
+/* .copyright {
+    color: darkgray;
+    font-family: 'Julius Sans One', sans-serif;
+  } */
+
+  .frontcontainer {
+    background-image: url(../images/chicagoneon.jpg);
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 100%;
+    /* min-height: 100%; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas:
+      "b b a a c c "
+      "b b i i g g"
+      "b b d d h h "
+      "b b e e e e"
+      "j j j j j j";
+  }
+@media only screen and (max-width: 760px){
+  .frontcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+      "a c"
+      "a g"
+      "b b"
+      "e e"
+      "j j"
+  }
+  .nameplate{
+    grid-area: c;
+  }
+  .jetfly{
+    grid-area: g;
+  }
+  .buttondiv{
+    grid-area: g;
+  }
+  .greeting{
+    font-size: 20px;
+  }
+  .ctcClose{
+    padding-right: 5px;
+    font-size: 10px;
+  }
+  .box{
+    margin: 0px 0px 0px 10px;
+  }
+  #box3{
+    height: 70px;
+  }
+  .sendBtn{
+    margin-top: 5px;
+    margin-right: 41px;
+  }
+  .form{
+    padding-bottom: 2px;
+    margin-left: 10px;
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 520px){
+  .frontcontainer {
+    /* min-height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "c"
+      "j";
+  }
+  .nameplate{
+    grid-area: a;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-right: 10px;
+    /* display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    grid-column: 2; */
+  }
+  .buttondiv{
+    justify-items: center;
+  }
+  .jetfly{
+    grid-area: b;
+  }
+  .buttondiv{
+    grid-area: b;
+  }
+  #box3{
+    height: 40px;
+  }
+  .frontContact{
+    grid-area: c;
+  }
+  .sendBtn{
+    margin-right: 27px;
+  }
+  .time{
+    display: none;
+  }
+  
+}
+

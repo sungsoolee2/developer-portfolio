@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bahianita|Great+Vibes|Julius+Sans+One|Rajdhani|Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio2.css" />
+    <link rel="stylesheet" href="./assets/css/about2.css" />
+    <link rel="stylesheet" href="./assets/css/aboutinfo.css" />
+    
+   
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/icons/diamond.png"
+    />
+    <title>Sung Lee - Portfolio</title>
+  </head>
+
+  <body>
+
+
+    <!--  -->
+    <!-- front container -->
+    <!--  -->
+    <div class="frontcontainer" id="front">
+      <!-- Navigation Bar -->
+      <div class="navBar">
+        <span id="ctc1" class="fcontact" >
+          <h3>Sung Lee</h3>
+          6440 N Kolmar Ave
+          Lincolnwood, IL. 60712
+          <br><br>
+          (312)404-7072
+          slee@enteract.com
+          </span>
+         
+      </div> 
+
+      <div class="content">
+          <div class="logoDiv">
+                <img id="mainLogo" src="./assets/images/streetcode.jpg">
+          </div>
+            
+      </div>
+
+      <div class="slideContact">
+            <a class="ctcClose">&times;</a>
+            <div class="greetDiv">
+              <h1 class="greeting">Contact Me</h1>
+            </div>
+            <div class="fillup">
+                  <label class="form">Name</label>
+                  <br />
+                  <input class="box" id="custName" type="text"/>
+                  <br />
+      
+                  <label class="form">Email</label>
+                  <br />
+                  <input class="box" id="custEmail" type="text"/>
+                  <br />
+      
+                  <label class="form">Message</label>
+                  <br />
+                  <textarea class="box" id="box3" placeholder="Type your message here..." onfocus="this.placeholder = ''"></textarea>
+                  <br />
+                  <button class="sendBtn" id="frontSend">Submit</button>
+                  <span class="sent"></span>
+            </div>
+            <span id="ctc1" class="fcontact" >
+                    <h3>Sung Lee</h3>
+                    6440 N Kolmar Ave
+                    Lincolnwood, IL. 60712
+                    </span>
+                    <span id="ctc2" class="fcontact">
+                    (312)404-7072<br><br>
+                    slee@enteract.com
+                    </span>
+               
+            </div>
+             
+        
+    
+      <div class="footer">
+            <img
+              src="./assets/images/smpurplewater.gif"
+              width="100%"
+              height="100px;"
+            />
+            <div class="footNav">
+              <div class="social">
+                <img
+                  class="sclbtn"
+                  id="git"
+                  src="./assets/images/icons/icongit.png"
+                  width="30"
+                  height="30"
+                />
+                <img
+                  class="sclbtn"
+                  id="insta"
+                  src="./assets/images/icons/inconinsta.png"
+                  width="30"
+                  height="30"
+                />
+                <img
+                  class="sclbtn"
+                  id="linked"
+                  src="./assets/images/icons/iconlinked.png"
+                  width="30"
+                  height="30"
+                />
+                <img
+                  class="sclbtn"
+                  id="google"
+                  src="./assets/images/icons/icongoogle.png"
+                  width="30"
+                  height="30"
+                />
+              
+              </div>
+              <div class="time">
+    
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Front Container End -->
+      
+      <!-- about profile -->
+      <div class="aboutInfo" id="abtInfo">
+          
+          <div class="abouttri">
+             <img id="profpic" src="./assets/images/profile.jpg">
+             <h3 class="infotext infohead">Sung Lee - Full Stack Developer</h3>
+             <div class="infoDiv">
+               <ul>
+                 <li class="infotext">
+                     I'm a Full Stack developer, proficient in <span class="infolight">MERN Stack Development</span>
+                 </li>
+                 <li class="infotext">
+                     Northwestern University School of Professional Studies
+                 
+                  Certified Full Stack Web Development --
+                  Intensive 24-week-long boot camp dedicated to designing and building web applications. Skills learned consisted of HTML5, CSS3, JavaScript (ES6), jQuery, Bootstrap, Firebase, Node.js, MySQL, MongoDB,  Mongoose, Sequelize, Express, React.js.
+                  
+                 </li>
+                 <li class="infotext">
+                     Depaul University - Masters Program in Computer Science- Telecommunications
+                     16 credits completed towards degree.
+                  </li>
+                 <li class="infotext"> 
+                     University of Wisconsin- Madison - B.A degree - International Economics
+                     </li>
+               </ul>
+             </div>
+              </div>
+          <div class="aboutfor">
+                 <!-- <img id="abtmainLogo" src="./assets/images/aicode.jpg"> -->
+                 
+           </div>
+       </div>
+       <!-- <a href="" id="link">Link up with me here!</a> -->
+
+      <!-- about Mission Page -->
+      <div class="portfoliocontainer" id="port">
+        <!-- Navigation Bar -->
+    <div class="portnavBar">
+
+       
+        <div class="iconDiv">
+              <!-- <img id="navLogo" src="./assets/images/icons/diamond.png"> -->
+          </div>
+          
+          <div class="down porthide">
+              <img id="upBtn" src="./assets/images/icons/up.png">
+          </div>
+    </div> 
+          <div class="titlebar">
+              <img id="portLogo" src="./assets/images/projectLogo.png">
+          </div>
+      
+          <div class="scroll">
+            <!-- <h1 class="scrolltitle">Projects in Development</h1> -->
+    
+            <ul class="work">
+              <span class="tap">TAP TO VIEW</span>
+              <li class="item">
+                      <img src="./assets/images/icons/intouchicon.png" class="workBtn" id="intouch" /><br>inTouch - GPS Tracking App
+                      </li>
+              <li class="item">
+                <img src="./assets/images/icons/NBA.png" class="workBtn" id="gunz"/><br>NBA Dream Team Builder App
+              </li>
+              <li class="item">
+                      <img src="./assets/images/icons/upbiticon.png" class="workBtn" id="upBit"/><br>upBit - Stock Cryptocurrency Analysis App
+                    </li>
+            </ul>
+          </div>
+
+
+    
+    
+          <!-- Modals -->
+                        <!-- Modal content -->
+              <div id="intouchModal" class="modal">
+                  <div class="scIcon">
+                      <!-- <img
+                          width="100px"
+                          height="20px"
+                          name="scimg"
+                          src="./assets/images/icons/scicon1.png"
+                          /> -->
+                          
+                  </div>
+         
+                  <div id="intouchdemo" class="modal-demo">
+                          <img
+                          class="tipsyIMg"
+                          width="100%"
+                          height="100%"
+                          name="intouchvimg"
+                          src="./assets/images/read2.png"
+                          />
+                  </div>
+                  <div class="modal-text">
+                      <span id="intouchinfo" class="modal-info">
+                              Intouch is a real-time, interactive app that helps parents keep "InTouch" of their children and they're location. A google maps view of all the childrens location is stored and visualized through a custom made API using Google maps platform, Sequelize, and MySQL database. When a child leaves a set user defined zone inTouch sends a nodemailer alert to the parents email. The family can utilize the built in real-time chat interface using the socketio library allowing for full-duplex chat connection between family members.
+                      </span>
+                  </div>
+                  <div class="modal-option">
+                      <span class="close tip">CLOSE</span>
+                      <a class="learnlink" href="https://intouch555.herokuapp.com/" target="_blank"><span class="more tip">Get inTouch Now!</span></a> 
+                      <a class="githublink" href="https://github.com/sungsoolee2/project-2" target="_blank"><span class="more tip">Go to GitHub Link</span></a> 
+                    </div>
+                  </div>
+  <!-- Modal content -->
+          <div id="tipsyModal" class="modal">
+                  <div class="scIcon">
+                          <!-- <img
+                          width="100px"
+                          height="20px"
+                          name="scimg"
+                          src="./assets/images/icons/scicon1.png"
+                          /> -->
+                          
+                  </div>
+        
+            <div id="tipsydemo" class="modal-demo">
+              <video
+                class="tipsyvid"
+                controls="controls"
+                width="100%"
+                height="100%"
+                name="tipsyvid"
+                src="./assets/vids/tipsydemo.mov"
+              ></video>
+            </div>
+            <div class="modal-text">
+              <span id="tipsyinfo" class="modal-info">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, repudiandae aut. Accusamus odio rem eaque possimus quibusdam dolores est at vitae? Sed vel molestias molestiae, soluta ipsam quasi dignissimos architecto?
+              </span>
+            </div>
+            <div class="modal-option">
+              <span class="close tip">CLOSE</span>
+              <a class="learnlink" href="https://joeylansangan.github.io/Mix-This/" target="_blank"><span class="more tip">MIX DRINKS HERE</span></a> 
+            </div>
+          </div>
+
+           <!-- Modal content -->
+           <div id="upBitModal" class="modal">
+                   <div class="scIcon">
+                           <!-- <img
+                          width="100px"
+                          height="20px"
+                          name="scimg"
+                          src="./assets/images/icons/scicon1.png"
+                           />  -->
+                        
+                  </div>
+        
+            <div id="upBitdemo" class="modal-demo">
+                  <img
+                          class="upBitIMg"
+                          width="100%"
+                          height="100%"
+                          name="intouchvimg"
+                          src="./assets/images/upbitshot.png"
+                          >
+            </div>
+            <div class="modal-text">
+              <span id="upBitinfo" class="modal-info">
+                upBit is an interactive financial app that users can utilize to monitor and analyze cryptocurrencies.  Our team has created a front -end interface with our own custom API. We’ve populated the API with historical prices and sentiment data that can be used to chart relationships of these cryptocurrencies against they’re sentiment scores.
+              </span>
+            </div>
+            <div class="modal-option">
+              <span class="close tip">CLOSE</span>
+              <span class="learnlink" href="https://thawing-depths-92804.herokuapp.com/" target="_blank"><span class="more tip">Load upBit!</span></a> 
+              <a class="githublink" href="https://github.com/k-lia/upbit" target="_blank"><span class="more tip">Go to GitHub Link</span></a> 
+            </div>
+          </div>
+
+            <!-- Modal content -->
+            <div id="gunzModal" class="modal">
+                  <div class="scIcon">
+                          <!-- <img
+                          width="100px"
+                          height="20px"
+                          name="scimg"
+                          src=""
+                          > -->
+                      
+                  </div>
+        
+            <div id="gunzdemo" class="modal-demo">
+                  <img
+                  class="gunzvid"
+                  width="100%"
+                  height="100%"
+                  name="gunzvid"
+                  src="./assets/images/nbateam.png"
+                >
+            </div>
+            <div class="modal-text">
+              <span id="gunzinfo" class="modal-info">
+               Create your dream team from full NBA roster.  User can save players onto Firebase API with login authorization.
+              </span>
+            </div>
+            <div class="modal-option">
+              <span class="close tip">CLOSE</span>
+              <a class="learnlink" href="https://sungsoolee2.github.io/project-01/" target="_blank"><span class="more tip">Create Team</span></a> 
+              <a class="githublink" href="https://github.com/sungsoolee2/project-01" target="_blank"><span class="more tip">Go to GitHub Link</span></a> 
+            </div>
+          </div>
+
+          <div class="portfoot">
+  
+          </div>
+        </div>
+    <!-- scripts start -->
+    <!-- Jquery and JS File -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/main2.js"></script>
+    <!-- <script type="text/javascript" src="./assets/js/test.js"></script> -->
+    <!-- portfolio js links -->
+    <script type="text/javascript" src="./assets/js/portfolio.js"></script>
+   
+  </body>
+</html>

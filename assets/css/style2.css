@@ -1,0 +1,287 @@
+html,
+body {
+  /* background-image: url(../images/chicagoneon.jpg);
+  background-color: black; */
+
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.frontcontainer {
+  transition: margin-left .5s;
+  background-image: url(../images/chicagoneon.jpg);
+  background-size: 100% 100%;
+  min-width: 100%;
+  min-height: 100%;
+  /* min-height: 100%; */
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "a a a a"
+  "b b b b"
+  "c c c c"
+  "d d d d";
+}
+.navBar {
+    height: 60px;
+    /* background: none; */
+    /* background: whitesmoke; */
+    /* background: #010316; */
+    grid-area: a;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo opt dwn";
+}
+
+.iconDiv{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+
+#navLogo{
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+} 
+.homeMenu{
+    grid-area: opt;
+    /* justify-self: center; */
+    align-self: center;
+}
+.homeNav{
+    border-radius: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+  
+    color: rgb(255, 255, 255);
+    margin: 0px 10px 0px 10px;
+    padding: 5px;
+}
+.homeNav:hover{
+    color: black;
+    background: rgb(255, 255, 255);; 
+    cursor: pointer;
+    /* color: rgb(255, 255, 255); */
+    /* background: #818181; */
+    /* border: #113a92 solid 1px; */
+}
+.down{
+    grid-area: dwn;
+}
+#downBtn{
+    /* justify-self: flex-end; */
+    padding: 10px;
+    width: 40px;
+    height: 30px;
+}
+#downBtn:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+#intro{
+    background: whitesmoke;
+    color: black;
+}
+.content{
+    transition: margin-left 2s;
+    margin-top: 80px;
+    grid-area: b;
+}
+.logoDiv{
+
+    background: rgba(1, 64, 238, 0.356);
+    /* filter: brightness(500%); */
+}
+
+#mainLogo{
+    /* background: rgba(1, 64, 238, 0.356); */
+    width: 40%;
+    height: 50%;
+}
+
+#greetLogo{
+    /* background: rgba(0, 5, 71, 0.911); */
+    margin-right: 50px;
+    width: 30%;
+    height: 30%;
+}
+.info{
+    background: rgba(0, 5, 71, 0.911);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.infoImg{
+    /* background: rgba(1, 64, 238, 0.356); */
+    background: rgba(0, 5, 71, 0.911);
+    margin-right: 50px;
+    width: 15%;
+    height: 15%;
+}
+#createImg{
+    margin-bottom: 10px;
+}
+.footer {
+    grid-area: d;
+    display: grid;
+}
+.footNav{
+    background:rgb(0, 0, 0);
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "x x y y y";
+  }
+  
+  .social{
+    grid-area: x;
+  }
+  .sclbtn{
+    margin: 0px 10px 0px 10px;
+  }
+  .time{
+    justify-self: end;
+    grid-area: y;
+    padding: 10px;
+    float: right;
+    color: whitesmoke;
+    /* font-family: "Great Vibes", cursive; */
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+  }
+.sclbtn:hover {
+    filter: brightness(300%);
+    cursor: pointer;
+  }
+  .jumpbtn:hover {
+    cursor: pointer;
+    color: white;
+    filter: brightness(150%);
+  }
+  .slideContact{
+    transition: 0.5s; 
+      /* justify-self: end; */
+    /* display: hidden; */
+    grid-area: b;
+    height: auto; 
+    width: 30%;
+    transition: 0.5s;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "cls cls"
+    "hed hed"
+    "frm frm"
+    "frm frm"
+    "ctc1 ctc2";
+    background: rgb(0, 0, 34);
+  }
+  .greetDiv{
+    grid-area: hed;
+  }
+  .ctcClose{
+    padding-right: 5px;
+    grid-area: cls;
+    justify-self: end;
+    color: darkgray;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .ctcClose:hover{
+    filter: brightness(200%);
+    cursor: pointer;
+  }
+  .greeting{
+    margin-left: 10px;
+    color: darkgray;
+    /* font-family: "Great Vibes", cursive; */
+    font-family: 'Julius Sans One', sans-serif;
+  }
+  .fillup{
+    grid-area: frm;
+  }
+  .box{
+    width: 92%;
+    margin: 5px 10px 15px 10px;
+    /* background-color:rgba(50, 50, 50, 0.5); */
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  #box3{
+    height: 150px;
+  }
+  .sendBtn{
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    background: whitesmoke;
+    /* border-radius: 5px; */
+  }
+  .sent{
+    display: none;
+    margin-left: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color: darkgray;
+    font-size: 12px;
+  }
+  .form{
+    padding: 5px;
+    margin-left: 10px;
+    font-family: 'Julius Sans One', sans-serif;
+    /* font-family: 'Roboto Mono', monospace; */
+    color: darkgray;
+  }
+  .fcontact{
+    grid-area: ctc1;
+    align-self: flex-end;
+    margin: 10px;
+    grid-area: ctc;
+    color: rgb(202, 188, 202);
+    font-size: 70%;
+    font-family: "Julius Sans One", sans-serif;
+  }
+  #ctc1{
+    grid-area: ctc1;
+    align-self: flex-end;
+  }
+  #ctc2{
+    grid-area: ctc2;
+    align-self: flex-end;
+  }
+
+.highlights{
+    /* background-image: linear-gradient(to bottom right, #091f4e, #0b2b6e); */
+    background: rgb(7, 5, 17);
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "trading infra dta";
+    align-items: flex-end;
+    text-align: center;
+    padding: 50px;
+    color: rgb(88, 127, 143);
+    font-family: "Rajdhani", sans-serif;
+}
+.infra{
+    margin: 0px 15px 0px 15px;
+    grid-area: infra;
+}
+.data{
+    margin: 0px 15px 0px 15px;
+    grid-area: dta;
+} 

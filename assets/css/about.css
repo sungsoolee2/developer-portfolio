@@ -1,0 +1,346 @@
+.aboutcontainer {
+  display: none;
+  /* background: black; */
+  /* background: rgb(166, 165, 172); */
+  /* background-image: url(../images/gray2.jpg); */
+  background-size: 100% 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 1fr 1fr ;
+  grid-template-areas:
+    "nav nav nav nav"
+    "con con con con"
+    "con con con con";
+}
+
+.aboutnavBar {
+  /* background: rgb(148, 148, 148); */
+  /* background: rgba(4, 8, 66, 0.678); */
+  background: rgb(0, 0, 0);
+  grid-area: nav;
+  height: 60px;
+  /* background: none; */
+  /* background: whitesmoke; */
+  /* background: #010316; */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "logo opt dwn";
+}
+
+.iconDiv{
+  grid-area: logo;
+  justify-self: center;
+  align-self: center;
+}
+
+#navLogo{
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+} 
+.aboutMenu{
+  grid-area: opt;
+  /* justify-self: center; */
+  align-self: center;
+}
+.aboutNav{
+  border-radius: 5px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+
+  color: rgb(0, 0, 0);
+
+  margin: 0px 10px 0px 10px;
+  padding: 5px;
+}
+.aboutNav:hover{
+  /* color: black; */
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);; 
+  cursor: pointer;
+  /* color: rgb(255, 255, 255); */
+  /* background: #818181; */
+  /* border: #113a92 solid 1px; */
+}
+#aboutupBtn{
+  /* justify-self: flex-end; */
+  padding: 10px;
+  width: 40px;
+  height: 30px;
+}
+#aboutupBtn:hover{
+  cursor: pointer;
+  opacity: .7;
+}
+#aboutabout{
+  background: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0);
+}
+.imgDiv {
+  grid-area: tgt;
+  background-image: url(../images/purplit.gif);
+  background-size: 90% 90%;
+  height: 100%;
+  background-repeat: no-repeat;
+
+  padding: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto 1fr 1fr;
+  grid-template-areas:
+    "mar mar mar mar"
+    "mid mid mid mid"
+    "lft img img rgt"
+    "lft img img rgt";
+}
+
+.mainImg {
+  grid-area: img;
+  justify-self: center;
+  align-self: center;
+  border: solid rgba(126, 78, 126, 0.568) 4px;
+  width: 70%;
+  height: 60%;
+}
+.aboutContent{
+  /* background: whitesmoke; */
+  /* background-image: linear-gradient(to bottom, #000000, #222222); */
+  grid-area: con;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "x x g g g"
+    "x x g g g"
+    "x x g g g";
+}
+.aboutlogoDiv{
+  /* margin-right: 0%; */
+  /* background: rgba(1, 64, 238, 0.658); */
+  grid-area: g;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+#aboutmainLogo{
+  margin-left: 20px;
+  /* background: rgba(1, 64, 238, 0.356); */
+ width: 80%;
+ height: 80%;
+}
+#aboutserious{
+
+  /* background: rgba(1, 64, 238, 0.356); */
+ width: 100%;
+ height: 20%;
+ margin-bottom: 10px;
+}
+.wallart{
+  /* border: solid 5px rgb(0, 42, 119); */
+  /* margin-left: 20%; */
+  /* border-left: solid 5px rgba(10, 21, 56, 0.623); */
+  /* margin: 1% 5% 1% 5%; */
+  grid-area: x;
+}
+.wallartDiv{
+  height: 100%;
+  background-image: url(../images/art.jpg);
+  background-size: 101% 100%;
+  background-repeat: no-repeat;
+}
+#walltext{
+  width: 100%;
+  height: 100%;
+}
+#abtscroll{
+  height: 50%;
+  width: 30%;
+}
+.wallmid{
+  grid-area: t;
+  background: #050505;
+}
+.wallside{
+  border-left: #050505 solid 30px;
+  grid-area: g;
+  background-image: url(../images/wall2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wall{
+  border: solid 2px rgb(15, 142, 180);
+  background: rgba(0, 46, 253, 0.562);
+  margin: 30px;
+  grid-area: t;
+  display: grid;
+  /* grid-template-columns: auto;  */
+}
+
+#introduce{
+  width: 100%;
+  height: 100%;
+}
+/* #mern{
+  justify-self: flex-end;
+  width: 20%;
+  height: 20%;
+}
+.buzz{
+  grid-area: t;
+}
+#buzzwords{
+  width:50%;
+  height:50%;
+} */
+.text{
+  /* height: 80%; */
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgba(3, 12, 41, 0.719);
+  grid-area: s;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(230, 230, 230);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.abouttext{
+  border-radius: 5px;
+  margin: 5px 5px;
+  padding: 10px;
+  font-size: 15px;
+ 
+}
+.textone{
+  background: rgba(1, 64, 238, 0.356);
+}
+.texttwo{
+  background: rgba(238, 222, 1, 0.356);
+}
+.texttre{
+  background: rgba(255, 0, 119, 0.356);
+}
+.textfor{
+  background: rgba(2, 110, 29, 0.356);
+}
+.textfiv{
+  background: rgba(255, 255, 255, 0.356);
+}
+.textsix{
+  background: rgba(56, 21, 54, 0.616);
+  margin-bottom: 10px;
+}
+
+.skills {
+  /* background: rgba(0, 0, 0, 0.562); */
+  background: rgb(0, 0, 0);
+  /* margin: 10px; */
+  grid-area: skl;
+}
+#skillsChart{
+  width: 50%;
+  height: 100%;
+}
+.contact {
+  margin: 10px;
+  grid-area: ctc;
+  color: rgb(202, 188, 202);
+  font-size: 70%;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* .form{
+  grid-area: frm;
+  color: rgb(202, 188, 202);
+  font-size: 70%;
+  font-family: "Julius Sans One", sans-serif;
+}
+.box{
+  width: 80%;
+}
+.msgbox{
+  height: 80px;
+} */
+.aboutfoot {
+  grid-area: bot;
+  justify-self: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 920px){
+  .text {
+    font-size: 60%;
+  }
+  
+  .skills {
+    font-size: 60%;
+  }
+  .contact {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .aboutcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+    "tgt abt"
+    "tgt abt"
+    "ctc skl"
+    "bot bot";
+  }
+  .mainImg{
+  width: 130px;
+  height: 150px;
+  }
+  .text {
+    font-size: 50%;
+    align-self: center;
+  }
+  
+  .skills {
+    font-size: 50%;
+    padding-bottom: 30px;
+  }
+  .contact {
+    font-size: 50%;
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 450px){
+  .aboutcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+    "tgt abt"
+    "tgt abt"
+    "ctc skl"
+    "bot bot";
+  }
+  .text {
+
+    font-size: 20%;
+    align-self: center;
+  }
+  .skills {
+    font-size: 30%;
+    padding-bottom: 20px;
+  }
+  .contact {
+    font-size: 30%;
+    padding-bottom: 40px;
+  }
+}

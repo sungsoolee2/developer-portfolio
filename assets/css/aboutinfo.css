@@ -1,0 +1,93 @@
+.aboutInfo{
+    min-width: 100%;
+    min-height: 100vh; 
+    font-family: "Rajdhani", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto 1fr 1fr;
+    grid-template-areas:
+      "n n n n n"
+      "x x g g g"
+      "x x g g g"
+      "x x g g g";
+  }
+.profilenavBar{
+    grid-area: n;
+}
+.aboutone{
+    grid-area: x;
+    background: #050505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutto{
+    border-left: #050505 solid 30px;
+    grid-area: g;
+    background-image: url(../images/wallinvert.jpg);
+    background-size: 100% 100%;
+    
+}
+
+.abouttri{
+    /* border-left: #050505 solid 30px; */
+    grid-area: x;
+    background: #050505;
+    
+}
+.aboutfor{
+    border-left: #050505 solid 30px;
+    grid-area: g;
+    background-image: url(../images/wall2.jpg);
+    background-size: 100% 100%;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+    
+}
+.onetext{
+    color: whitesmoke;
+    text-align: center;
+}
+#mission{
+    width: 75%;
+    height: 20%;
+}
+
+#abtmainLogo{
+    width: 60%;
+    height: 20%;
+}
+#profpic{
+    width: 90%;
+    justify-self: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: solid 5px rgb(14, 44, 68);
+}
+.infotext{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    background: #05050588;
+    color: whitesmoke;
+}
+.infohead{
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.infolight{
+    color: rgb(248, 71, 248);
+}
+#link{
+    color: rgb(43, 138, 182);
+}
+#abticons{
+    /* margin-left: 20%; */
+    float: right;
+    width: 60%;
+    height: 60%;
+}
+#code{
+    text-decoration: underline;
+}
