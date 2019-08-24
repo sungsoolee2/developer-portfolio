@@ -199,6 +199,9 @@
   .learnlink{
       color: whitesmoke;
   }
+  .githublink{
+    color: whitesmoke;
+}
   #upBitLink:hover{
     cursor: not-allowed;
   }
