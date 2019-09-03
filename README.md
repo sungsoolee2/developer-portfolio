@@ -17,8 +17,15 @@ Portfolio
 ![Screen shot2](./assets/screenshots/dev3.png)
 
 
+
+# Contact Info
+
 Sung Lee
+
 6440 N. Kolmar
+
 Lincolnwood,IL 60712
+
 312-404-7072
-Slee@enteract.com
+
+slee@enteract.com
