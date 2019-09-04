@@ -184,6 +184,10 @@ $("#intouch").click(function(){
         $("#gunzModal").toggle("slide");
         $("#intouchModal").toggle("slide");
     }
+    else if ($("#burgerModal").is(':visible')){
+        $("#burgerModal").toggle("slide");
+        $("#intouchModal").toggle("slide");
+    }
     else{
         $("#intouchModal").toggle("slide");
     }
@@ -202,6 +206,10 @@ $("#liri").click(function(){
     }
     else if ($("#gunzModal").is(':visible')){
         $("#gunzModal").toggle("slide");
+        $("#liriModal").toggle("slide");
+    }
+    else if ($("#burgerModal").is(':visible')){
+        $("#burgerModal").toggle("slide");
         $("#liriModal").toggle("slide");
     }
     else{
@@ -224,13 +232,17 @@ $("#upBit").click(function(){
         $("#gunzModal").toggle("slide");
         $("#upBitModal").toggle("slide");
     }
+    else if ($("#burgerModal").is(':visible')){
+        $("#burgerModal").toggle("slide");
+        $("#upBitModal").toggle("slide");
+    }
     else{
         $("#upBitModal").toggle("slide");
     }
    
 })
 
-// gunz modal
+// NBA dream team modal
 $("#gunz").click(function(){
     if($("#intouchModal").is(':visible')){
         $("#intouchModal").toggle("slide");
@@ -244,8 +256,36 @@ $("#gunz").click(function(){
         $("#upBitModal").toggle("slide");
         $("#gunzModal").toggle("slide");
     }
+    else if ($("#burgerModal").is(':visible')){
+        $("#burgerModal").toggle("slide");
+        $("#gunzModal").toggle("slide");
+    }
     else{
         $("#gunzModal").toggle("slide");
+    }
+   
+})
+
+// burger modal
+$("#burger").click(function(){
+    if($("#intouchModal").is(':visible')){
+        $("#intouchModal").toggle("slide");
+        $("#burgerModal").toggle("slide");
+    }
+    else if ($("#liriModal").is(':visible')){
+        $("#liriModal").toggle("slide");
+        $("#burgerModal").toggle("slide");
+    }
+    else if ($("#upBitModal").is(':visible')){
+        $("#upBitModal").toggle("slide");
+        $("#burgerModal").toggle("slide");
+    }
+    else if ($("#gunzModal").is(':visible')){
+        $("#gunzrModal").toggle("slide");
+        $("#burgerModal").toggle("slide");
+    }
+    else{
+        $("#burgerModal").toggle("slide");
     }
    
 })

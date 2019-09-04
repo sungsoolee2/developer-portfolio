@@ -2,6 +2,21 @@
 
 Personal Website For My Projects and Contact Info
 
+# Group Projects
+
+NBA Dream Team
+
+inTouch
+
+UpBit
+
+
+#Individual Projects
+
+Liri-Node-App
+
+EatDaBurger
+
 
  [Github Deployed Link](https://sungsoolee2.github.io/developer-portfolio/) 
 
