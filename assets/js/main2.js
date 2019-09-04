@@ -172,8 +172,8 @@ $(".close").click(function(){
 
 // intouch modal
 $("#intouch").click(function(){
-    if($("#tipsyModal").is(':visible')){
-        $("#tipsyModal").toggle("slide");
+    if($("#liriModal").is(':visible')){
+        $("#liriModal").toggle("slide");
         $("#intouchModal").toggle("slide");
     }
     else if ($("#upBitModal").is(':visible')){
@@ -190,22 +190,22 @@ $("#intouch").click(function(){
    
 })
 
-// tipsy modal
-$("#tipsy").click(function(){
+// liri modal
+$("#liri").click(function(){
     if($("#intouchModal").is(':visible')){
         $("#intouchModal").toggle("slide");
-        $("#tipsyModal").toggle("slide");
+        $("#liriModal").toggle("slide");
     }
     else if ($("#upBitModal").is(':visible')){
         $("#upBitModal").toggle("slide");
-        $("#tipsyModal").toggle("slide");
+        $("#liriModal").toggle("slide");
     }
     else if ($("#gunzModal").is(':visible')){
         $("#gunzModal").toggle("slide");
-        $("#tipsyModal").toggle("slide");
+        $("#liriModal").toggle("slide");
     }
     else{
-        $("#tipsyModal").toggle("slide");
+        $("#liriModal").toggle("slide");
     }
    
 })
@@ -216,8 +216,8 @@ $("#upBit").click(function(){
         $("#intouchModal").toggle("slide");
         $("#upBitModal").toggle("slide");
     }
-    else if ($("#tipsyModal").is(':visible')){
-        $("#tipsyModal").toggle("slide");
+    else if ($("#liriModal").is(':visible')){
+        $("#liriModal").toggle("slide");
         $("#upBitModal").toggle("slide");
     }
     else if ($("#gunzModal").is(':visible')){
@@ -236,8 +236,8 @@ $("#gunz").click(function(){
         $("#intouchModal").toggle("slide");
         $("#gunzModal").toggle("slide");
     }
-    else if ($("#tipsyModal").is(':visible')){
-        $("#tipsyModal").toggle("slide");
+    else if ($("#liriModal").is(':visible')){
+        $("#liriModal").toggle("slide");
         $("#gunzModal").toggle("slide");
     }
     else if ($("#upBitModal").is(':visible')){
