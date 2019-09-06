@@ -201,7 +201,10 @@
   }
   .githublink{
     color: whitesmoke;
-}
+  }
+  .demolink{
+  color: whitesmoke;
+  }
   #upBitLink:hover{
     cursor: not-allowed;
   }

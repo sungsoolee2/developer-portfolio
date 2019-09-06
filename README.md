@@ -6,18 +6,18 @@ Personal Website For My Projects and Contact Info
 
 # Group Projects
 
-NBA Dream Team
+[NBA Dream Team](https://drive.google.com/file/d/1SgVplw4lab7C613eOn6gpeG1jHmacWaM/view)
 
-inTouch
+[inTouch](https://drive.google.com/file/d/1Y5yFGbi7o1O4_1aUpn7zzYNKoI-h6pof/view?usp=sharing)
 
-UpBit
+[UpBit](https://drive.google.com/file/d/1aDF-X-xB6eF7m2S9AK5EJ1kjxpvuBAh5/view)
 
 
 # Individual Projects
 
-Liri-Node-App
+[Liri-Node-App](https://drive.google.com/file/d/1jQ6hxe9savm8kt4ekq5OKnYguAlxWnQX/view)
 
-EatDaBurger
+[EatDaBurger](https://drive.google.com/file/d/1k4miOq1rV417KXvTZ66QapXl613HK51J/view)
 
 
 ## Screen Shots
